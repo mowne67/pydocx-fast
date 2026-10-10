@@ -1,9 +1,9 @@
-# docx-speedups
+# pydocx-fast
 
 Drop-in performance fixes for [python-docx](https://github.com/python-openxml/python-docx). No API changes, byte-identical output.
 
 ```python
-import docx_speedups  # once, before use
+import pydocx_fast  # once, before use
 from docx import Document
 ```
 
@@ -20,7 +20,7 @@ from docx import Document
 ## Test
 
 ```sh
-uv run python test_docx_speedups.py
+uv run python test_pydocx_fast.py
 ```
 
 Runs upstream and patched in separate processes and asserts identical output.

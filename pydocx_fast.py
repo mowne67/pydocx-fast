@@ -1,4 +1,4 @@
-"""Drop-in speedups for python-docx. `import docx_speedups` once, then use `docx` as usual."""
+"""Drop-in speedups for python-docx. `import pydocx_fast` once, then use `docx` as usual."""
 from lxml import etree
 
 from docx.oxml.ns import nsmap, qn

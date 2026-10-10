@@ -1,9 +1,9 @@
-"""Run: python test_docx_speedups.py  -- patched output must match upstream byte-for-byte."""
+"""Run: python test_pydocx_fast.py  -- patched output must match upstream byte-for-byte."""
 import hashlib, io, subprocess, sys, time
 
 SCRIPT = r'''
 import sys, time, io, hashlib
-if sys.argv[1] == "fast": import docx_speedups
+if sys.argv[1] == "fast": import pydocx_fast
 from docx import Document
 from docx.shared import Pt
 N = int(sys.argv[2])
